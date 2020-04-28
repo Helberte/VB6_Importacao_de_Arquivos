@@ -189,6 +189,7 @@ Begin VB.Form Form1
       Splits(0)._ColumnProps(45)=   "Column(8).Order=9"
       Splits.Count    =   1
       PrintInfos(0)._StateFlags=   0
+      PrintInfos(0).Name=   "piInternal 0"
       PrintInfos(0).PageHeaderFont=   "Size=9.75,Charset=0,Weight=400,Underline=0,Italic=0,Strikethrough=0,Name=MS Sans Serif"
       PrintInfos(0).PageFooterFont=   "Size=9.75,Charset=0,Weight=400,Underline=0,Italic=0,Strikethrough=0,Name=MS Sans Serif"
       PrintInfos(0).PageHeaderHeight=   0
@@ -479,7 +480,6 @@ Attribute VB_Exposed = False
 Dim conexao As ADODB.Connection
 Dim rc  As ADODB.Recordset
 
-
 Dim banco As String
 Dim ACCTID As String
 Dim ACCTTYPE As String
@@ -489,23 +489,49 @@ Dim dia As String
 Dim valor As Long
 Dim resumo As String
 Dim CHECKNUM As String
-Dim memo As String
+Dim MEMO As String
 Dim BRANCHID As String
 Dim REFNUM As String
+Dim controlaFinal As Integer
+Dim parouAqui As Integer
+Dim numeroLinha As Integer
+Dim achou As Integer
+Dim totalRegistros As Integer
+Dim final As Integer
 
 Dim query As String
+'Tags Existentes
 
-
+Const BANKID1 As String = "<BANKID>"
+Const BANKID2 As String = "</BANKID>"
+Const ACCTID1 As String = "<ACCTID>"
+Const ACCTID2 As String = "</ACCTID>"
+Const ACCTTYPE1 As String = "<ACCTTYPE>"
+Const ACCTTYPE2 As String = "</ACCTTYPE>"
+Const TRNTYPE1 As String = "<TRNTYPE>"
+Const TRNTYPE2 As String = "</TRNTYPE>"
+Const DTPOSTED1 As String = "<DTPOSTED>"
+Const DTPOSTED2 As String = "</DTPOSTED>"
+Const TRNAMT1 As String = "<TRNAMT>"
+Const TRNAMT2 As String = "</TRNAMT>"
+Const FITID1 As String = "<FITID>"
+Const FITID2 As String = "</FITID>"
+Const CHECKNUM1 As String = "<CHECKNUM>"
+Const CHECKNUM2 As String = "</CHECKNUM>"
+Const MEMO1 As String = "<MEMO>"
+Const MEMO2 As String = "</MEMO>"
+Const REFNUM1 As String = "<REFNUM>"
+Const REFNUM2 As String = "</REFNUM>"
+Const BRANCHID1 As String = "<BRANCHID>"
+Const BRANCHID2 As String = "</BRANCHID>"
 
 Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
         If KeyCode = vbKeyEscape Then Unload Me
 End Sub
 
 Private Function conexaoBanco() As Boolean
-        
         Set conexao = New ADODB.Connection
         Set rc = New ADODB.Recordset
-        
         With conexao
             
             .CursorLocation = adUseClient
@@ -518,21 +544,145 @@ Private Function conexaoBanco() As Boolean
             Else
                 conexaoBanco = False
             End If
-        
         End With
-
 End Function
 
-Private Sub Importacao(caminho As String, nome As String, extensao As String)
+Private Sub Analise(referencia As Integer)
+'<BANKID>   - banco
+'<BRANCHID>
+'<ACCTID>
+'<ACCTTYPE>
+'<TRNTYPE>  - OPERACAO
+'<DTPOSTED> - DIA
+'<TRNAMT>   - VALOR
+'<FITID>    - RESUMO
+'<CHECKNUM>
+'<REFNUM>
+'<MEMO>
+
+'11 tags
+
+numeroLinha = 0
+parouAqui = 0
+achou = 1
+totalRegistros = 0
+final = 0
+
+DescobrindoOfinal referencia
+
+For Var = 1 To totalRegistros
+
+    banco = LimpaArquivo(BANKID1, BANKID2, referencia)
+    BRANCHID = LimpaArquivo(BRANCHID1, BRANCHID2, referencia)
+    ACCTID = LimpaArquivo(ACCTID1, ACCTID2, referencia)
+    ACCTTYPE = LimpaArquivo(ACCTTYPE1, ACCTTYPE2, referencia)
+    OPERACAO = LimpaArquivo(TRNTYPE1, TRNTYPE2, referencia)
+    dia = LimpaArquivo(DTPOSTED1, DTPOSTED2, referencia)
+    dia = Mid(dia, 7, 2) & "/" & Mid(dia, 5, 2) & "/" & Mid(dia, 1, 4)
+    valor = LimpaArquivo(TRNAMT1, TRNAMT2, referencia)
+    resumo = LimpaArquivo(FITID1, FITID2, referencia)
+    CHECKNUM = LimpaArquivo(CHECKNUM1, CHECKNUM2, referencia)
+    REFNUM = LimpaArquivo(REFNUM1, REFNUM2, referencia)
+    MEMO = LimpaArquivo(MEMO1, MEMO2, referencia)
+
+    query = "insert into Movimentacao (Banco, ACCTID, ACCTTYPE, NUMERO_STMTTRN, OPERACAO, DIA, VALOR, RESUMO, CHECKNUM, MEMO, BRANCHID, REFNUM) values ('" & banco & "','" & ACCTID & "','" & ACCTTYPE & "'," & 1 & ",'" & OPERACAO & "', '" & dia & "'," & valor & ",'" & resumo & "', '" & CHECKNUM & "', '" & MEMO & "', '" & BRANCHID & "', '" & REFNUM & "')"
     
+    conexaoBanco
     
+    conexao.Execute (query)
+Next
+    query = "select * from Movimentacao"
+    Set rc = conexao.Execute(query)
+    
+    Set TDBGrid1.DataSource = rc
+End Sub
+
+Private Function AbrindoArquivo(referencia As Integer) As Integer
+        Dim numero As Integer
+        
+        If referencia = 1 Then
+            numero = FreeFile
+            Open txtCampoCaminho.Text & "\" & txtCampoNome.Text & "." & txtCampoExtensao For Input As #numero
+            AbrindoArquivo = numero
+        Else
+            If referencia = 2 Then
+                numero = FreeFile
+                Open txtCampoCaminho.Text & "\" & "novoArquivoVB6" & "." & txtCampoExtensao.Text For Input As #numero
+                AbrindoArquivo = numero
+            End If
+        End If
+End Function
+
+
+Private Sub DescobrindoOfinal(referencia As Integer)
+    
+    Dim numero As Integer
+    Dim linha As String
+    
+    numero = AbrindoArquivo(referencia)
+    
+    Do While Not EOF(numero)
+        Line Input #numero, linha
+        
+        If InStr(1, linha, "</STMTTRN>") > 0 Then
+            totalRegistros = totalRegistros + 1
+        End If
+    Loop
+    Close #numero
+
+End Sub
+
+Private Function LimpaArquivo(tag1 As String, tag2 As String, referencia As Integer) As String
+        Dim linha As String
+        Dim numero As Integer
+           
+        numero = AbrindoArquivo(referencia)
+        
+        Do While Not EOF(numero)
+            Line Input #numero, linha
+                        
+            numeroLinha = numeroLinha + 1
+            
+            If numeroLinha >= parouAqui Then
+            
+                linha = Replace(linha, vbTab, "")
+                If InStr(1, linha, tag1) > 0 Then
+                
+                    linha = Replace(linha, tag1, "")
+                    linha = Replace(linha, tag2, "")
+                    
+                    achou = 2
+                    parouAqui = numeroLinha
+                    numeroLinha = 0
+                    Exit Do
+                End If
+            End If
+            totalLinhas = totalLinhas + 1
+        Loop
+        
+        If achou = 1 Then
+            If EOF(numero) Then
+                numeroLinha = 0
+            End If
+            Close #numero
+            LimpaArquivo = ""
+        Else
+            If achou = 2 Then
+                achou = 1
+                Close #numero
+                LimpaArquivo = linha
+            End If
+        End If
+          
+End Function
+
+Private Sub xpcmdbutton1_Click()
     Dim arquivo As Integer
     Dim linha As String
     
-    
     arquivo = FreeFile
     
-    Open caminho & "\" & nome & "." & extensao For Input As #arquivo
+    Open txtCampoCaminho.Text & "\" & txtCampoNome.Text & "." & txtCampoExtensao.Text For Input As #arquivo
     
     Line Input #arquivo, linha
     
@@ -542,71 +692,20 @@ Private Sub Importacao(caminho As String, nome As String, extensao As String)
         
         novoArquivo = FreeFile
         
-        Open caminho & "\" & "novoArquivoVB6" & "." & extensao For Output As #novoArquivo
+        Open txtCampoCaminho.Text & "\" & "novoArquivoVB6" & "." & txtCampoExtensao.Text For Output As #novoArquivo
         Print #novoArquivo, Replace(linha, vbLf, Chr(10) + Chr(13))
-        
+       
         Close arquivo
         Close novoArquivo
-        
-        novoArquivo = FreeFile + 1
-        
-        Open caminho & "\" & "novoArquivoVB6" & "." & extensao For Input As #novoArquivo
-        
-        Analise novoArquivo
-    
+             
+        Analise 2
     Else
-        
-        Analise novoArquivo
+        Close #arquivo
+        Analise 1
     End If
-    
-    
-End Sub
-
-
-Private Sub Analise(numero As Integer)
-
-        Dim linha As String
-        Dim fim As Integer
-        fim = 0
-            
-        Do While Not EOF(numero)
-            
-            Line Input #numero, linha
-            
-            linha = Replace(linha, vbTab, "")
-                    
-            If InStr(1, linha, "<BANKID>") > 0 Then
-                linha = Replace(linha, "<BANKID>", "")
-                linha = Replace(linha, "</BANKID>", "")
-                banco = linha
-            End If
-        
-        
-            If fim = 1 Then
-                
-            
-            End If
-            
-        Loop
-
-End Sub
-
-Private Sub xpcmdbutton1_Click()
-        Importacao txtCampoCaminho.Text, txtCampoNome.Text, txtCampoExtensao.Text
-        conexaoBanco
 End Sub
 
 Private Sub xpcmdbutton2_Click()
-    
    Shell "C:\Windows\explorer.exe", vbNormalFocus
-    
-    'C:\Windows\explorer.exe
-    
-     
-       
 End Sub
 
-Private Sub xpcmdbutton3_Click()
-        
-
-End Sub
