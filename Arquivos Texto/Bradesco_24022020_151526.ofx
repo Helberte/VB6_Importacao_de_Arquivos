@@ -1,0 +1,903 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+	<SIGNONMSGSRSV1>
+		<SONRS>
+			<STATUS>
+				<CODE>0
+				<SEVERITY>INFO
+			</STATUS>
+			<DTSERVER>00000000000000
+			<LANGUAGE>POR
+		</SONRS>
+	</SIGNONMSGSRSV1>
+	<BANKMSGSRSV1>
+		<STMTTRNRS>
+			<TRNUID>1001
+			<STATUS>
+				<CODE>0
+				<SEVERITY>INFO
+			</STATUS>
+			<STMTRS>
+				<CURDEF>BRL
+				<BANKACCTFROM>
+					<BANKID>0237
+					<ACCTID>457/522122
+					<ACCTTYPE>CHECKING
+				</BANKACCTFROM>
+				<BANKTRANLIST>
+					<DTSTART>20200101000000
+					<DTEND>20200223000000
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-500.00
+						<FITID>N100BB:02/01/20:-500.0:8948427: Saque c/c Bdn: Ag01448maq038948seq0842701011003
+						<CHECKNUM>8948427
+						<MEMO>Saque c/c Bdn Ag01448maq038948seq0842701011003
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-300.00
+						<FITID>N100D9:02/01/20:-300.0:8948770: Saque c/c Bdn: Ag01448maq038948seq0677031120956
+						<CHECKNUM>8948770
+						<MEMO>Saque c/c Bdn Ag01448maq038948seq0677031120956
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-905.00
+						<FITID>N100F7:02/01/20:-905.0:7622124: Transf Fdos Doc: Dest.rbc de Carvalho
+						<CHECKNUM>7622124
+						<MEMO>Transf Fdos Doc Dest.rbc de Carvalho
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-77.97
+						<FITID>N10115:02/01/20:-77.97:0146777: Visa Electron: Megafarma
+						<CHECKNUM>0146777
+						<MEMO>Visa Electron Megafarma
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-60.00
+						<FITID>N10133:02/01/20:-60.0:0183331: Visa Electron: Global Informatica
+						<CHECKNUM>0183331
+						<MEMO>Visa Electron Global Informatica
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-24.98
+						<FITID>N10151:02/01/20:-24.98:0320092: Visa Electron: Atlanta
+						<CHECKNUM>0320092
+						<MEMO>Visa Electron Atlanta
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-99.90
+						<FITID>N1016F:02/01/20:-99.9:0392964: Visa Electron: Farma Minas
+						<CHECKNUM>0392964
+						<MEMO>Visa Electron Farma Minas
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-45.64
+						<FITID>N1018D:02/01/20:-45.64:0500008: Visa Electron: Aguas de Ariquemes
+						<CHECKNUM>0500008
+						<MEMO>Visa Electron Aguas de Ariquemes
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-51.00
+						<FITID>N101AB:02/01/20:-51.0:0692425: Visa Electron: Kreps e Pastelaria m
+						<CHECKNUM>0692425
+						<MEMO>Visa Electron Kreps e Pastelaria m
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-650.00
+						<FITID>N101C9:02/01/20:-650.0:0722649: Visa Electron: Hosp Mat s Franci
+						<CHECKNUM>0722649
+						<MEMO>Visa Electron Hosp Mat s Franci
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-113.19
+						<FITID>N101E7:02/01/20:-113.19:0904411: Visa Electron: oh Supermercado
+						<CHECKNUM>0904411
+						<MEMO>Visa Electron oh Supermercado
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-10.45
+						<FITID>N10205:02/01/20:-10.45:7622124: Doc/tedinternet: Doc Internet
+						<CHECKNUM>7622124
+						<MEMO>Doc/tedinternet Doc Internet
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200102000000[-03:EST]
+						<TRNAMT>-199.67
+						<FITID>N10223:02/01/20:-199.67:6970000: Conta de Luz: Bradesco C-ceron/ro
+						<CHECKNUM>6970000
+						<MEMO>Conta de Luz Bradesco C-ceron/ro
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200103000000[-03:EST]
+						<TRNAMT>-6.48
+						<FITID>N10241:03/01/20:-6.48:4298358: Iof Util Limite:
+						<CHECKNUM>4298358
+						<MEMO>Iof Util Limite 
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200106000000[-03:EST]
+						<TRNAMT>-98.20
+						<FITID>N1025E:06/01/20:-98.2:0040570: Visa Electron: Jeeda Coml Dist Alim
+						<CHECKNUM>0040570
+						<MEMO>Visa Electron Jeeda Coml Dist Alim
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200106000000[-03:EST]
+						<TRNAMT>-50.35
+						<FITID>N1027C:06/01/20:-50.35:0100264: Visa Electron: Casa Aparecida
+						<CHECKNUM>0100264
+						<MEMO>Visa Electron Casa Aparecida
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200106000000[-03:EST]
+						<TRNAMT>-40.00
+						<FITID>N1029A:06/01/20:-40.0:0530371: Visa Electron: Broder Lanches
+						<CHECKNUM>0530371
+						<MEMO>Visa Electron Broder Lanches
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200106000000[-03:EST]
+						<TRNAMT>-66.40
+						<FITID>N102B8:06/01/20:-66.4:0683398: Visa Electron: Comercial Boa Compra
+						<CHECKNUM>0683398
+						<MEMO>Visa Electron Comercial Boa Compra
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200107000000[-03:EST]
+						<TRNAMT>120.00
+						<FITID>N102D6:07/01/20:120.0:0734088: Dep Dinheiro cb: o Proprio Favorecido
+						<CHECKNUM>0734088
+						<MEMO>Dep Dinheiro cb o Proprio Favorecido
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200107000000[-03:EST]
+						<TRNAMT>-210.00
+						<FITID>N102F3:07/01/20:-210.0:0020817: Visa Electron: Pag*depxibanca
+						<CHECKNUM>0020817
+						<MEMO>Visa Electron Pag*depxibanca
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200107000000[-03:EST]
+						<TRNAMT>-37.57
+						<FITID>N10311:07/01/20:-37.57:0215141: Visa Electron: Mercado Celupi
+						<CHECKNUM>0215141
+						<MEMO>Visa Electron Mercado Celupi
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200107000000[-03:EST]
+						<TRNAMT>-260.00
+						<FITID>N1032F:07/01/20:-260.0:0739538: Visa Electron: Still Mat p Const
+						<CHECKNUM>0739538
+						<MEMO>Visa Electron Still Mat p Const
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200107000000[-03:EST]
+						<TRNAMT>-30.62
+						<FITID>N1034D:07/01/20:-30.62:4298358: Enc Lim Credito: Encargo - 13,41%
+						<CHECKNUM>4298358
+						<MEMO>Enc Lim Credito Encargo - 13,41%
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200108000000[-03:EST]
+						<TRNAMT>-174.99
+						<FITID>N1036B:08/01/20:-174.99:0000343: Pagto Cobranca: Pos Unopar
+						<CHECKNUM>0000343
+						<MEMO>Pagto Cobranca Pos Unopar
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200108000000[-03:EST]
+						<TRNAMT>-1390.00
+						<FITID>N10389:08/01/20:-1390.0:0080526: Visa Electron: Still Mat p Const
+						<CHECKNUM>0080526
+						<MEMO>Visa Electron Still Mat p Const
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200108000000[-03:EST]
+						<TRNAMT>-775.00
+						<FITID>N103A7:08/01/20:-775.0:0500010: Visa Electron: Novalar
+						<CHECKNUM>0500010
+						<MEMO>Visa Electron Novalar
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200108000000[-03:EST]
+						<TRNAMT>-28.00
+						<FITID>N103C5:08/01/20:-28.0:0856231: Visa Electron: Restaurante e Lancho
+						<CHECKNUM>0856231
+						<MEMO>Visa Electron Restaurante e Lancho
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200109000000[-03:EST]
+						<TRNAMT>-35.00
+						<FITID>N103E3:09/01/20:-35.0:0090029: Visa Electron: Papelaria Univers
+						<CHECKNUM>0090029
+						<MEMO>Visa Electron Papelaria Univers
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200109000000[-03:EST]
+						<TRNAMT>-95.73
+						<FITID>N10401:09/01/20:-95.73:0090895: Visa Electron: Jeeda Coml Dist Alim
+						<CHECKNUM>0090895
+						<MEMO>Visa Electron Jeeda Coml Dist Alim
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200110000000[-03:EST]
+						<TRNAMT>-2000.00
+						<FITID>N1041F:10/01/20:-2000.0:7088161: Saque c/c Bdn: Ag01437maq057088seq0116110011202
+						<CHECKNUM>7088161
+						<MEMO>Saque c/c Bdn Ag01437maq057088seq0116110011202
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200110000000[-03:EST]
+						<TRNAMT>-112.53
+						<FITID>N1043D:10/01/20:-112.53:0000344: Pagto Cobranca: Heroi Mirim
+						<CHECKNUM>0000344
+						<MEMO>Pagto Cobranca Heroi Mirim
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200110000000[-03:EST]
+						<TRNAMT>-96.37
+						<FITID>N1045B:10/01/20:-96.37:0100633: Visa Electron: Jeeda Coml Dist Alim
+						<CHECKNUM>0100633
+						<MEMO>Visa Electron Jeeda Coml Dist Alim
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200110000000[-03:EST]
+						<TRNAMT>-776.00
+						<FITID>N10479:10/01/20:-776.0:0190756: Visa Electron: Alumi Vidros
+						<CHECKNUM>0190756
+						<MEMO>Visa Electron Alumi Vidros
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200113000000[-03:EST]
+						<TRNAMT>160.00
+						<FITID>N10497:13/01/20:160.0:3813298: Ted-t Elet Disp: Remet.stuqui Moda Eireli
+						<CHECKNUM>3813298
+						<MEMO>Ted-t Elet Disp Remet.stuqui Moda Eireli
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200113000000[-03:EST]
+						<TRNAMT>1800.00
+						<FITID>N104B4:13/01/20:1800.0:4908278: Ted-t Elet Disp: Remet.a c m Comercio e Dis
+						<CHECKNUM>4908278
+						<MEMO>Ted-t Elet Disp Remet.a c m Comercio e Dis
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200113000000[-03:EST]
+						<TRNAMT>-94.58
+						<FITID>N104D1:13/01/20:-94.58:0111744: Visa Electron: Irmaos Goncalves-
+						<CHECKNUM>0111744
+						<MEMO>Visa Electron Irmaos Goncalves-
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200113000000[-03:EST]
+						<TRNAMT>-85.98
+						<FITID>N104EF:13/01/20:-85.98:0368444: Visa Electron: Ultra Popular Jipa02
+						<CHECKNUM>0368444
+						<MEMO>Visa Electron Ultra Popular Jipa02
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200113000000[-03:EST]
+						<TRNAMT>-56.80
+						<FITID>N1050D:13/01/20:-56.8:0761569: Visa Electron: e m da Silva Cost
+						<CHECKNUM>0761569
+						<MEMO>Visa Electron e m da Silva Cost
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200113000000[-03:EST]
+						<TRNAMT>-35.00
+						<FITID>N1052B:13/01/20:-35.0:0782272: Visa Electron: Antonio Donizete
+						<CHECKNUM>0782272
+						<MEMO>Visa Electron Antonio Donizete
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200114000000[-03:EST]
+						<TRNAMT>-100.00
+						<FITID>N10549:14/01/20:-100.0:7083625: Saque c/c Bdn: Ag00457maq017083seq0562514011852
+						<CHECKNUM>7083625
+						<MEMO>Saque c/c Bdn Ag00457maq017083seq0562514011852
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200114000000[-03:EST]
+						<TRNAMT>-237.78
+						<FITID>N10567:14/01/20:-237.78:0142147: Visa Electron: Irmaos Goncalves-
+						<CHECKNUM>0142147
+						<MEMO>Visa Electron Irmaos Goncalves-
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200115000000[-03:EST]
+						<TRNAMT>-42.00
+						<FITID>N10585:15/01/20:-42.0:0000345: Pagto Cobranca: Pgto Flexdocs - Rede
+						<CHECKNUM>0000345
+						<MEMO>Pagto Cobranca Pgto Flexdocs - Rede
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200115000000[-03:EST]
+						<TRNAMT>-26.80
+						<FITID>N105A3:15/01/20:-26.8:0130120: Tarifa Bancaria: Cesta B.expresso3
+						<CHECKNUM>0130120
+						<MEMO>Tarifa Bancaria Cesta B.expresso3
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200115000000[-03:EST]
+						<TRNAMT>-23.19
+						<FITID>N105C1:15/01/20:-23.19:6970000: Conta de Luz: Bradesco C-ceron/ro
+						<CHECKNUM>6970000
+						<MEMO>Conta de Luz Bradesco C-ceron/ro
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200115000000[-03:EST]
+						<TRNAMT>-28.90
+						<FITID>N105DF:15/01/20:-28.9:6980003: Conta Agua/esgo: Bradesco C-caerd/ro
+						<CHECKNUM>6980003
+						<MEMO>Conta Agua/esgo Bradesco C-caerd/ro
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200115000000[-03:EST]
+						<TRNAMT>-71.65
+						<FITID>N105FD:15/01/20:-71.65:6980104: Conta Agua/esgo: Bradesco C-aguas Ariquemes
+						<CHECKNUM>6980104
+						<MEMO>Conta Agua/esgo Bradesco C-aguas Ariquemes
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200116000000[-03:EST]
+						<TRNAMT>-100.00
+						<FITID>N1061B:16/01/20:-100.0:0094744: Visa Electron: Posto Monte Caste
+						<CHECKNUM>0094744
+						<MEMO>Visa Electron Posto Monte Caste
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200117000000[-03:EST]
+						<TRNAMT>-132.18
+						<FITID>N10639:17/01/20:-132.18:0171053: Visa Electron: Jeeda Coml Dist Alim
+						<CHECKNUM>0171053
+						<MEMO>Visa Electron Jeeda Coml Dist Alim
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-31.00
+						<FITID>N10657:20/01/20:-31.0:0061591: Visa Electron: Broder Lanches
+						<CHECKNUM>0061591
+						<MEMO>Visa Electron Broder Lanches
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-74.00
+						<FITID>N10675:20/01/20:-74.0:0185505: Visa Electron: Farmacia Goias
+						<CHECKNUM>0185505
+						<MEMO>Visa Electron Farmacia Goias
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-179.13
+						<FITID>N10693:20/01/20:-179.13:0190928: Visa Electron: Irmaos Goncalves-
+						<CHECKNUM>0190928
+						<MEMO>Visa Electron Irmaos Goncalves-
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-59.96
+						<FITID>N106B1:20/01/20:-59.96:0237340: Visa Electron: rd Farma
+						<CHECKNUM>0237340
+						<MEMO>Visa Electron rd Farma
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-70.00
+						<FITID>N106CF:20/01/20:-70.0:0406573: Visa Electron: Imperio Das Capinhas
+						<CHECKNUM>0406573
+						<MEMO>Visa Electron Imperio Das Capinhas
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-27.98
+						<FITID>N106ED:20/01/20:-27.98:0740106: Visa Electron: Still Mat p Const
+						<CHECKNUM>0740106
+						<MEMO>Visa Electron Still Mat p Const
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-30.75
+						<FITID>N1070B:20/01/20:-30.75:0761710: Visa Electron: e m da Silva Cost
+						<CHECKNUM>0761710
+						<MEMO>Visa Electron e m da Silva Cost
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-100.00
+						<FITID>N10729:20/01/20:-100.0:0876410: Visa Electron: Amazonia Locacoes
+						<CHECKNUM>0876410
+						<MEMO>Visa Electron Amazonia Locacoes
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200120000000[-03:EST]
+						<TRNAMT>-2215.88
+						<FITID>N10747:20/01/20:-2215.88:3990020: Gasto c Credito:
+						<CHECKNUM>3990020
+						<MEMO>Gasto c Credito 
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200121000000[-03:EST]
+						<TRNAMT>600.00
+						<FITID>N10764:21/01/20:600.0:5885078: Ted-t Elet Disp: Remet.marca Distribuicao c
+						<CHECKNUM>5885078
+						<MEMO>Ted-t Elet Disp Remet.marca Distribuicao c
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200121000000[-03:EST]
+						<TRNAMT>-140.00
+						<FITID>N10781:21/01/20:-140.0:0399731: Visa Electron: Pag*heliodoromacield
+						<CHECKNUM>0399731
+						<MEMO>Visa Electron Pag*heliodoromacield
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200121000000[-03:EST]
+						<TRNAMT>-382.96
+						<FITID>N1079F:21/01/20:-382.96:0761722: Visa Electron: e m da Silva Cost
+						<CHECKNUM>0761722
+						<MEMO>Visa Electron e m da Silva Cost
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200122000000[-03:EST]
+						<TRNAMT>-150.00
+						<FITID>N107BD:22/01/20:-150.0:0305081: Visa Electron: Academia Modelo d
+						<CHECKNUM>0305081
+						<MEMO>Visa Electron Academia Modelo d
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200123000000[-03:EST]
+						<TRNAMT>-73.00
+						<FITID>N107DB:23/01/20:-73.0:0761773: Visa Electron: e m da Silva Cost
+						<CHECKNUM>0761773
+						<MEMO>Visa Electron e m da Silva Cost
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200124000000[-03:EST]
+						<TRNAMT>-83.78
+						<FITID>N107F9:24/01/20:-83.78:0072448: Visa Electron: Restaurante Sertanej
+						<CHECKNUM>0072448
+						<MEMO>Visa Electron Restaurante Sertanej
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>0.90
+						<FITID>N10817:27/01/20:0.9:2602588: Rendimentos: Poup Facil-depos a Partir 4/5/12
+						<CHECKNUM>2602588
+						<MEMO>Rendimentos Poup Facil-depos a Partir 4/5/12
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>8.57
+						<FITID>N10834:27/01/20:8.57:2702588: Rendimentos: Poup Facil-depos a Partir 4/5/12
+						<CHECKNUM>2702588
+						<MEMO>Rendimentos Poup Facil-depos a Partir 4/5/12
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-0.59
+						<FITID>N10851:27/01/20:-0.59:0004135: Est Rendiment *: Poup Facil-depos a Partir 4/5/12
+						<CHECKNUM>0004135
+						<MEMO>Est Rendiment * Poup Facil-depos a Partir 4/5/12
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-26.48
+						<FITID>N1086F:27/01/20:-26.48:0109867: Visa Electron: t g de Almeida
+						<CHECKNUM>0109867
+						<MEMO>Visa Electron t g de Almeida
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-457.77
+						<FITID>N1088D:27/01/20:-457.77:0250014: Visa Electron: Gazin 348
+						<CHECKNUM>0250014
+						<MEMO>Visa Electron Gazin 348
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-56.33
+						<FITID>N108AB:27/01/20:-56.33:0276213: Visa Electron: Pag*heliodoromacield
+						<CHECKNUM>0276213
+						<MEMO>Visa Electron Pag*heliodoromacield
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-248.00
+						<FITID>N108C9:27/01/20:-248.0:0387970: Visa Electron: Alianca Mat de co
+						<CHECKNUM>0387970
+						<MEMO>Visa Electron Alianca Mat de co
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-170.80
+						<FITID>N108E7:27/01/20:-170.8:0388588: Visa Electron: Ultra Popular Jipa02
+						<CHECKNUM>0388588
+						<MEMO>Visa Electron Ultra Popular Jipa02
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-106.40
+						<FITID>N10905:27/01/20:-106.4:0761857: Visa Electron: e m da Silva Cost
+						<CHECKNUM>0761857
+						<MEMO>Visa Electron e m da Silva Cost
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200127000000[-03:EST]
+						<TRNAMT>-24.00
+						<FITID>N10923:27/01/20:-24.0:0845044: Visa Electron: Churrascaria Imperio
+						<CHECKNUM>0845044
+						<MEMO>Visa Electron Churrascaria Imperio
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200130000000[-03:EST]
+						<TRNAMT>-104.90
+						<FITID>N10941:30/01/20:-104.9:0851767: Visa Electron: Pag*heliodoromacield
+						<CHECKNUM>0851767
+						<MEMO>Visa Electron Pag*heliodoromacield
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200131000000[-03:EST]
+						<TRNAMT>-52.00
+						<FITID>N1095F:31/01/20:-52.0:0081523: Visa Electron: Palacio Dos Parafuso
+						<CHECKNUM>0081523
+						<MEMO>Visa Electron Palacio Dos Parafuso
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200131000000[-03:EST]
+						<TRNAMT>-72.00
+						<FITID>N1097D:31/01/20:-72.0:0679001: Visa Electron: Pag*heliodoromacield
+						<CHECKNUM>0679001
+						<MEMO>Visa Electron Pag*heliodoromacield
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200131000000[-03:EST]
+						<TRNAMT>-23.00
+						<FITID>N1099B:31/01/20:-23.0:0799168: Visa Electron: Sorvetes Frutbom
+						<CHECKNUM>0799168
+						<MEMO>Visa Electron Sorvetes Frutbom
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200203000000[-03:EST]
+						<TRNAMT>-99.00
+						<FITID>N109B9:03/02/20:-99.0:0000346: Pagto Cobranca: Mda 1
+						<CHECKNUM>0000346
+						<MEMO>Pagto Cobranca Mda 1
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200203000000[-03:EST]
+						<TRNAMT>-9.00
+						<FITID>N109D7:03/02/20:-9.0:0010183: Visa Electron: Tai Restaurante
+						<CHECKNUM>0010183
+						<MEMO>Visa Electron Tai Restaurante
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200203000000[-03:EST]
+						<TRNAMT>-136.80
+						<FITID>N109F5:03/02/20:-136.8:0583790: Visa Electron: Pag*heliodoromacield
+						<CHECKNUM>0583790
+						<MEMO>Visa Electron Pag*heliodoromacield
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200205000000[-03:EST]
+						<TRNAMT>600.00
+						<FITID>N10A13:05/02/20:600.0:4544324: Ted-t Elet Disp: Remet.marca Distribuicao c
+						<CHECKNUM>4544324
+						<MEMO>Ted-t Elet Disp Remet.marca Distribuicao c
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200205000000[-03:EST]
+						<TRNAMT>-134.36
+						<FITID>N10A30:05/02/20:-134.36:0000347: Pagto Cobranca: Onda Agil
+						<CHECKNUM>0000347
+						<MEMO>Pagto Cobranca Onda Agil
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200206000000[-03:EST]
+						<TRNAMT>-500.00
+						<FITID>N10A4E:06/02/20:-500.0:1628979: Transf Autoriz: Grao Pagamentos e Financas
+						<CHECKNUM>1628979
+						<MEMO>Transf Autoriz Grao Pagamentos e Financas
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200206000000[-03:EST]
+						<TRNAMT>-63.00
+						<FITID>N10A6C:06/02/20:-63.0:0647082: Visa Electron: Pag*gauchosmateriais
+						<CHECKNUM>0647082
+						<MEMO>Visa Electron Pag*gauchosmateriais
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200206000000[-03:EST]
+						<TRNAMT>-60.75
+						<FITID>N10A8A:06/02/20:-60.75:0871555: Visa Electron: Thiago Materiais de
+						<CHECKNUM>0871555
+						<MEMO>Visa Electron Thiago Materiais de
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200207000000[-03:EST]
+						<TRNAMT>-774.00
+						<FITID>N10AA8:07/02/20:-774.0:0500008: Visa Electron: Novalar
+						<CHECKNUM>0500008
+						<MEMO>Visa Electron Novalar
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200210000000[-03:EST]
+						<TRNAMT>-150.00
+						<FITID>N10AC6:10/02/20:-150.0:7083479: Saque c/c Bdn: Ag00457maq017083seq0447909021158
+						<CHECKNUM>7083479
+						<MEMO>Saque c/c Bdn Ag00457maq017083seq0447909021158
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200211000000[-03:EST]
+						<TRNAMT>-51.72
+						<FITID>N10AE4:11/02/20:-51.72:0110153: Visa Electron: Supermercado Tai
+						<CHECKNUM>0110153
+						<MEMO>Visa Electron Supermercado Tai
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200211000000[-03:EST]
+						<TRNAMT>-605.00
+						<FITID>N10B02:11/02/20:-605.0:0599863: Visa Electron: Escola Girassol
+						<CHECKNUM>0599863
+						<MEMO>Visa Electron Escola Girassol
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200211000000[-03:EST]
+						<TRNAMT>-97.92
+						<FITID>N10B20:11/02/20:-97.92:0740446: Visa Electron: Papelaria Univers
+						<CHECKNUM>0740446
+						<MEMO>Visa Electron Papelaria Univers
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200211000000[-03:EST]
+						<TRNAMT>-480.00
+						<FITID>N10B3E:11/02/20:-480.0:0801403: Visa Electron: Girassol
+						<CHECKNUM>0801403
+						<MEMO>Visa Electron Girassol
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200212000000[-03:EST]
+						<TRNAMT>-381.30
+						<FITID>N10B5C:12/02/20:-381.3:6950220: Pgto Elet Trib: Bradesco C-pm ji Parana ro
+						<CHECKNUM>6950220
+						<MEMO>Pgto Elet Trib Bradesco C-pm ji Parana ro
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200213000000[-03:EST]
+						<TRNAMT>400.00
+						<FITID>N10B7A:13/02/20:400.0:9309385: Ted-t Elet Disp: Remet.stuqui Moda Eireli
+						<CHECKNUM>9309385
+						<MEMO>Ted-t Elet Disp Remet.stuqui Moda Eireli
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200213000000[-03:EST]
+						<TRNAMT>-200.00
+						<FITID>N10B97:13/02/20:-200.0:1105715: Transf Fdos Doc: Dest.l c Dos Santos Cursos me
+						<CHECKNUM>1105715
+						<MEMO>Transf Fdos Doc Dest.l c Dos Santos Cursos me
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200213000000[-03:EST]
+						<TRNAMT>-10.45
+						<FITID>N10BB5:13/02/20:-10.45:1105715: Doc/tedinternet: Doc Eletronico
+						<CHECKNUM>1105715
+						<MEMO>Doc/tedinternet Doc Eletronico
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200214000000[-03:EST]
+						<TRNAMT>1800.00
+						<FITID>N10BD3:14/02/20:1800.0:2808458: Ted-t Elet Disp: Remet.a c m Comercio e Dis
+						<CHECKNUM>2808458
+						<MEMO>Ted-t Elet Disp Remet.a c m Comercio e Dis
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200217000000[-03:EST]
+						<TRNAMT>-139.00
+						<FITID>N10BF0:17/02/20:-139.0:0629911: Visa Electron: Multi Shop
+						<CHECKNUM>0629911
+						<MEMO>Visa Electron Multi Shop
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200217000000[-03:EST]
+						<TRNAMT>-26.80
+						<FITID>N10C0E:17/02/20:-26.8:0130220: Tarifa Bancaria: Cesta B.expresso3
+						<CHECKNUM>0130220
+						<MEMO>Tarifa Bancaria Cesta B.expresso3
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200220000000[-03:EST]
+						<TRNAMT>1300.00
+						<FITID>N10C2C:20/02/20:1300.0:3258834: dp Dinh c/c Bdn: Ag00457maq003258seq01834
+						<CHECKNUM>3258834
+						<MEMO>dp Dinh c/c Bdn Ag00457maq003258seq01834
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200220000000[-03:EST]
+						<TRNAMT>50.00
+						<FITID>N10C49:20/02/20:50.0:3258844: dp Dinh c/c Bdn: Ag00457maq003258seq01844
+						<CHECKNUM>3258844
+						<MEMO>dp Dinh c/c Bdn Ag00457maq003258seq01844
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200220000000[-03:EST]
+						<TRNAMT>20.00
+						<FITID>N10C66:20/02/20:20.0:3258874: dp Dinh c/c Bdn: Ag00457maq003258seq01874
+						<CHECKNUM>3258874
+						<MEMO>dp Dinh c/c Bdn Ag00457maq003258seq01874
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200220000000[-03:EST]
+						<TRNAMT>-160.00
+						<FITID>N10C83:20/02/20:-160.0:0305913: Visa Electron: Academia Modelo d
+						<CHECKNUM>0305913
+						<MEMO>Visa Electron Academia Modelo d
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200220000000[-03:EST]
+						<TRNAMT>-2330.16
+						<FITID>N10CA1:20/02/20:-2330.16:3990051: Gasto c Credito:
+						<CHECKNUM>3990051
+						<MEMO>Gasto c Credito 
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>CREDIT
+						<DTPOSTED>20200221000000[-03:EST]
+						<TRNAMT>300.00
+						<FITID>N10023:21/02/20:300.0:9551870: Dep.dinheiro c/c-bdn: Ag01448maq019551seq09870
+						<CHECKNUM>9551870
+						<MEMO>Dep.dinheiro c/c-bdn Ag01448maq019551seq09870
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200221000000[-03:EST]
+						<TRNAMT>-100.00
+						<FITID>N10040:21/02/20:-100.0:0097886: Cartao Visa Electron: Posto Monte Caste
+						<CHECKNUM>0097886
+						<MEMO>Cartao Visa Electron Posto Monte Caste
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200226000000[-03:EST]
+						<TRNAMT>-5.50
+						<FITID>N1005E:26/02/20:-5.5:0839654: Cartao Visa Electron:
+						<CHECKNUM>0839654
+						<MEMO>Cartao Visa Electron 
+					</STMTTRN>
+					<STMTTRN>
+						<TRNTYPE>DEBIT
+						<DTPOSTED>20200226000000[-03:EST]
+						<TRNAMT>-30.00
+						<FITID>N1007B:26/02/20:-30.0:0173295: Cartao Visa Electron:
+						<CHECKNUM>0173295
+						<MEMO>Cartao Visa Electron 
+					</STMTTRN>
+				</BANKTRANLIST>
+				<LEDGERBAL>
+					<BALAMT>-141.69
+					<DTASOF>20200220000000[-03:EST]
+				</LEDGERBAL>
+			</STMTRS>
+		</STMTTRNRS>
+	</BANKMSGSRSV1>
+</OFX>

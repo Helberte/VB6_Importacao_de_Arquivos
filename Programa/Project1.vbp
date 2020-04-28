@@ -1,6 +1,10 @@
 Type=Exe
-Form=Form1.frm
 Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{2A75196C-D9EB-4129-B803-931327F72D5C}#2.8#0#..\..\..\Program Files (x86)\Common Files\System\ado\msado28.tlb#Microsoft ActiveX Data Objects 2.8 Library
+Object={0D623638-DBA2-11D1-B5DF-0060976089D0}#7.0#0; tdbg7.ocx
+Object={553E8CEC-F455-4A8A-B7EE-4492089A2AB5}#20.0#0; TS_CTRL.ocx
+Object={DEF7CADD-83C0-11D0-A0F1-00A024703500}#7.0#0; todg7.ocx
+Form=Form1.frm
 Startup="Form1"
 Command32=""
 Name="Project1"
