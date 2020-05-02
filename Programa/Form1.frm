@@ -1,37 +1,98 @@
 VERSION 5.00
 Object = "{553E8CEC-F455-4A8A-B7EE-4492089A2AB5}#20.0#0"; "TS_CTRL.ocx"
 Object = "{DEF7CADD-83C0-11D0-A0F1-00A024703500}#7.0#0"; "todg7.ocx"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
 Begin VB.Form Form1 
    BorderStyle     =   1  'Fixed Single
-   ClientHeight    =   8820
+   ClientHeight    =   11175
    ClientLeft      =   15
    ClientTop       =   15
-   ClientWidth     =   13575
+   ClientWidth     =   17700
    ControlBox      =   0   'False
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8820
-   ScaleWidth      =   13575
+   ScaleHeight     =   11175
+   ScaleWidth      =   17700
    StartUpPosition =   1  'CenterOwner
    WhatsThisHelp   =   -1  'True
-   Begin VB.ListBox List1 
-      Height          =   1425
-      Left            =   7680
-      TabIndex        =   10
-      Top             =   1680
-      Width           =   2895
+   Begin TS_CTRL.txtCampo txtCampoCaminho 
+      Height          =   375
+      Left            =   120
+      TabIndex        =   5
+      Top             =   1920
+      Width           =   9255
+      _ExtentX        =   16325
+      _ExtentY        =   661
+      Enabled         =   0   'False
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      BackColor       =   16777215
+      ForeColor       =   -2147483625
+      BorderStyle     =   0
+   End
+   Begin MSComDlg.CommonDialog CommonDialog1 
+      Left            =   17160
+      Top             =   960
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   393216
+   End
+   Begin TS_CTRL.xpcmdbutton xpcmdbutton3 
+      Height          =   375
+      Left            =   6600
+      TabIndex        =   4
+      Top             =   1440
+      Width           =   2775
+      _ExtentX        =   4895
+      _ExtentY        =   661
+      BTYPE           =   5
+      TX              =   "Relatório"
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "Form1.frx":0000
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin TrueOleDBGrid70.TDBGrid TDBGrid1 
-      Height          =   5535
+      Height          =   8655
       Left            =   120
       Negotiate       =   -1  'True
-      TabIndex        =   9
-      Top             =   3240
-      Width           =   13335
-      _ExtentX        =   23521
-      _ExtentY        =   9763
+      TabIndex        =   3
+      Top             =   2400
+      Width           =   17535
+      _ExtentX        =   30930
+      _ExtentY        =   15266
       _LayoutType     =   0
       _RowHeight      =   21
       _WasPersistedAsPixels=   0
@@ -61,13 +122,13 @@ Begin VB.Form Form1
       Splits(0)._ColumnProps(8)=   "Column(1).Order=2"
       Splits.Count    =   1
       PrintInfos(0)._StateFlags=   0
+      PrintInfos(0).Name=   "piInternal 0"
       PrintInfos(0).PageHeaderFont=   "Size=9.75,Charset=0,Weight=400,Underline=0,Italic=0,Strikethrough=0,Name=Segoe UI"
       PrintInfos(0).PageFooterFont=   "Size=9.75,Charset=0,Weight=400,Underline=0,Italic=0,Strikethrough=0,Name=Segoe UI"
       PrintInfos(0).PageHeaderHeight=   0
       PrintInfos(0).PageFooterHeight=   0
       PrintInfos.Count=   1
       Appearance      =   0
-      ColumnFooters   =   -1  'True
       DefColWidth     =   0
       EditDropDown    =   0   'False
       HeadLines       =   2
@@ -162,123 +223,22 @@ Begin VB.Form Form1
       _StyleDefs(66)  =   "Named:id=42:FilterBar"
       _StyleDefs(67)  =   ":id=42,.parent=33"
    End
-   Begin TS_CTRL.txtCampo txtCampoExtensao 
-      Height          =   315
-      Left            =   4800
-      TabIndex        =   7
-      Top             =   2760
-      Width           =   1455
-      _ExtentX        =   2566
-      _ExtentY        =   556
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Tahoma"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      BackColor       =   16777215
-      ForeColor       =   -2147483625
-      BorderStyle     =   0
-   End
-   Begin TS_CTRL.txtCampo txtCampoNome 
-      Height          =   315
-      Left            =   120
-      TabIndex        =   5
-      Top             =   2760
-      Width           =   3735
-      _ExtentX        =   6588
-      _ExtentY        =   556
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Tahoma"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      BackColor       =   16777215
-      ForeColor       =   -2147483625
-      BorderStyle     =   0
-   End
-   Begin TS_CTRL.txtCampo txtCampoCaminho 
-      Height          =   315
-      Left            =   120
-      TabIndex        =   4
-      Top             =   1920
-      Width           =   7215
-      _ExtentX        =   12726
-      _ExtentY        =   556
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Tahoma"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      BackColor       =   16777215
-      ForeColor       =   -2147483625
-      BorderStyle     =   0
-   End
    Begin TS_CTRL.xpcmdbutton xpcmdbutton2 
       Height          =   375
       Left            =   120
       TabIndex        =   2
-      Top             =   1080
-      Width           =   4935
-      _ExtentX        =   8705
+      Top             =   1440
+      Width           =   3495
+      _ExtentX        =   6165
       _ExtentY        =   661
-      BTYPE           =   3
+      BTYPE           =   5
       TX              =   "Escolher Arquivo no explorador"
       ENAB            =   -1  'True
       BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Tahoma"
          Size            =   9
          Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   15790320
-      BCOLO           =   15790320
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "Form1.frx":0000
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   0
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
-   End
-   Begin TS_CTRL.xpcmdbutton xpcmdbutton1 
-      Height          =   375
-      Left            =   10680
-      TabIndex        =   1
-      Top             =   2700
-      Width           =   2775
-      _ExtentX        =   4895
-      _ExtentY        =   661
-      BTYPE           =   3
-      TX              =   "Importar para o Banco"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Tahoma"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -301,93 +261,54 @@ Begin VB.Form Form1
       CHECK           =   0   'False
       VALUE           =   0   'False
    End
+   Begin TS_CTRL.xpcmdbutton xpcmdbutton1 
+      Height          =   375
+      Left            =   3720
+      TabIndex        =   1
+      Top             =   1440
+      Width           =   2775
+      _ExtentX        =   4895
+      _ExtentY        =   661
+      BTYPE           =   5
+      TX              =   "Importar para o Banco"
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "Form1.frx":0038
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
+   End
    Begin TS_CTRL.xpTitle xpTitle1 
       Height          =   915
       Left            =   0
       TabIndex        =   0
       Top             =   0
-      Width           =   13575
-      _ExtentX        =   23945
+      Width           =   17775
+      _ExtentX        =   31353
       _ExtentY        =   1614
       Caption         =   "Importação de Arquivos"
       RtName          =   "BLA BLA BLA"
-   End
-   Begin VB.Label lblArquivo 
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Arquivo"
-      Height          =   195
-      Left            =   7680
-      TabIndex        =   12
-      Top             =   1320
-      Width           =   540
-   End
-   Begin VB.Label Label4 
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Tags Não encontradas no arquivo:"
-      Height          =   195
-      Left            =   7680
-      TabIndex        =   11
-      Top             =   1080
-      Width           =   2475
-   End
-   Begin VB.Label Label3 
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Extenção do arquivo (Ex: .txt)"
-      BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   9.75
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   240
-      Left            =   4800
-      TabIndex        =   8
-      Top             =   2400
-      Width           =   2550
-   End
-   Begin VB.Label Label2 
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Cole o nome do arquivo com a sua extenção aqui"
-      BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   9.75
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   240
-      Left            =   120
-      TabIndex        =   6
-      Top             =   2400
-      Width           =   4425
-   End
-   Begin VB.Label Label1 
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Após escolher caminho do  arquivo copie e cole aqui"
-      BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   9.75
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   240
-      Left            =   120
-      TabIndex        =   3
-      Top             =   1560
-      Width           =   4755
    End
 End
 Attribute VB_Name = "Form1"
@@ -411,19 +332,22 @@ Dim ACCTTYPE As String
 Dim NUMERO_STMTTRN As String
 Dim OPERACAO As String
 Dim dia As String
-Dim valor As Long
+Dim valor As String
 Dim resumo As String
 Dim CHECKNUM As String
 Dim MEMO As String
 Dim BRANCHID As String
 Dim REFNUM As String
+Dim ORG As String
+Dim caminho As String
+
 Dim controlaFinal As Integer
 Dim parouAqui As Integer
 Dim numeroLinha As Integer
 Dim achou As Integer
 Dim totalRegistros As Integer
-Dim ORG As String
 Dim totalLinhas As Integer
+Dim colunas As String
 
 Dim query As String
 'Tags Existentes
@@ -455,8 +379,11 @@ Const ORG2 As String = "</ORG>"
 'ADICIONE NOVAS TAGS AQUI
 
 Private Sub Form_Activate()
+    colunas = "ORG, Banco [BANCO], ACCTID, ACCTTYPE, NUMERO_STMTTRN [CÓDIGO INTERNO]," & _
+              " OPERACAO [OPERAÇÃO], DIA [DATA], VALOR, RESUMO, CHECKNUM, MEMO, BRANCHID, REFNUM"
+    
     conexaoBanco
-    Set rc = conexao.Execute("Select * from movimentacao")
+    Set rc = conexao.Execute("Select " & colunas & " from movimentacao")
     Set Me.TDBGrid1.DataSource = rc
     Me.TDBGrid1.RecordSelectors = False
     Me.TDBGrid1.MarqueeStyle = dbgHighlightRowRaiseCell
@@ -478,7 +405,7 @@ Private Function conexaoBanco() As Boolean
         With conexao
             
             .CursorLocation = adUseClient
-            .ConnectionString = "Driver={SQL Server};Server=.;Uid=sa;Pwd=254685ro;Database=BancoOFX"
+            .ConnectionString = "Driver={SQL Server};Server=DESKTOP-5H5EHDA\SQLSERVER2012;Uid=sa;Pwd=254685ro;Database=BancoOFX"
             
             .Open
             
@@ -530,7 +457,9 @@ For Var = 1 To totalRegistros
 '<STMTTRN>
     OPERACAO = LimpaArquivo(TRNTYPE1, TRNTYPE2, referencia)
     dia = LimpaArquivo(DTPOSTED1, DTPOSTED2, referencia)
-    dia = Mid(dia, 7, 2) & "/" & Mid(dia, 5, 2) & "/" & Mid(dia, 1, 4)
+    If dia <> "" Then ' caso não exista uma data
+        dia = Mid(dia, 7, 2) & "/" & Mid(dia, 5, 2) & "/" & Mid(dia, 1, 4)
+    End If
     valor = LimpaArquivo(TRNAMT1, TRNAMT2, referencia)
     resumo = LimpaArquivo(FITID1, FITID2, referencia)
     CHECKNUM = LimpaArquivo(CHECKNUM1, CHECKNUM2, referencia)
@@ -539,20 +468,23 @@ For Var = 1 To totalRegistros
     'ADICIONE NOVAS TAGS AQUI
 '</STMTTRN>
 
-    query = "insert into Movimentacao (ORG, Banco, ACCTID, ACCTTYPE, NUMERO_STMTTRN, OPERACAO, DIA, VALOR, RESUMO, CHECKNUM, MEMO, BRANCHID, REFNUM) values ('" & ORG & "', '" & banco & "','" & ACCTID & "','" & ACCTTYPE & "'," & 1 & ",'" & OPERACAO & "', '" & dia & "'," & valor & ",'" & resumo & "', '" & CHECKNUM & "', '" & MEMO & "', '" & BRANCHID & "', '" & REFNUM & "')"
+    query = "execute ColMovimentacao '" & ORG & "','" & banco & _
+                                     "','" & ACCTID & "','" & ACCTTYPE & "', '" & OPERACAO & _
+                                     "','" & dia & "','" & valor & "','" & resumo & "','" & CHECKNUM & _
+                                     "','" & MEMO & "','" & BRANCHID & "','" & REFNUM & "'"
     
     conexaoBanco
     conexao.Execute (query)
 Next
     'distributiva
-    For var1 = 0 To List1.ListCount
-        For Var = var1 + 1 To List1.ListCount
-            If List1.List(var1) = List1.List(Var) Then
-                List1.RemoveItem (var1)
-            End If
-        Next
-    Next
-    query = "select * from Movimentacao"
+'    For var1 = 0 To List1.ListCount
+'        For Var = var1 + 1 To List1.ListCount
+'            If List1.List(var1) = List1.List(Var) Then
+'                List1.RemoveItem (var1)
+'            End If
+'        Next
+'    Next
+    query = "select " & colunas & " from Movimentacao"
     Set rc = conexao.Execute(query)
     
     Set TDBGrid1.DataSource = rc
@@ -563,7 +495,7 @@ Private Function AbrindoArquivo(referencia As Integer) As Integer
         
         If referencia = 1 Then
             numero = FreeFile
-            Open txtCampoCaminho.Text & "\" & txtCampoNome.Text & "." & txtCampoExtensao.Text For Input As #numero
+            Open caminho For Input As #numero
             AbrindoArquivo = numero
         Else
             If referencia = 2 Then
@@ -607,6 +539,7 @@ Private Function LimpaArquivo(tag1 As String, tag2 As String, referencia As Inte
             If numeroLinha >= parouAqui Then
             
                 linha = Replace(linha, vbTab, "")
+                linha = Trim(linha)
                 If InStr(1, linha, tag1) > 0 Then
                 
                     linha = Replace(linha, tag1, "")
@@ -624,11 +557,12 @@ Private Function LimpaArquivo(tag1 As String, tag2 As String, referencia As Inte
             If EOF(numero) Then
                 numeroLinha = 0
                                         
-                lblArquivo.Caption = txtCampoNome.Text
-                Me.List1.AddItem (tag1)
+              '  lblArquivo.Caption = txtCampoNome.Text
+              '  Me.List1.AddItem (tag1)
                                    
             End If
             Close #numero
+            
             LimpaArquivo = ""
         Else
             If achou = 2 Then
@@ -645,7 +579,7 @@ Private Sub xpcmdbutton1_Click()
     
     arquivo = FreeFile
     
-    Open txtCampoCaminho.Text & "\" & txtCampoNome.Text & "." & txtCampoExtensao.Text For Input As #arquivo
+    Open caminho For Input As #arquivo
     
     Line Input #arquivo, linha
     
@@ -669,6 +603,11 @@ Private Sub xpcmdbutton1_Click()
 End Sub
 
 Private Sub xpcmdbutton2_Click()
-   Shell "C:\Windows\explorer.exe", vbNormalFocus
+'   Shell "C:\Windows\explorer.exe", vbNormalFocus
+    CommonDialog1.DialogTitle = "Escolher Arquivo"
+    CommonDialog1.InitDir = "C:\Programação\VisualBasic\VB6_Importacao_de_Arquivos\Arquivos Texto"
+    CommonDialog1.ShowOpen
+        caminho = CommonDialog1.FileName
+        txtCampoCaminho.Text = caminho
 End Sub
 
